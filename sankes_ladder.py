@@ -3,9 +3,8 @@ import random
 position = 0
 
 def change_position(position):
-    list1 = [1, 2, 3, 4, 5, 6]
-    num = random.choice(list1)
     
+    num = give_random_num()    
     position = position + num
     
     if(position > 100):
@@ -13,6 +12,12 @@ def change_position(position):
         return position
     else:
         return position
+    
+def give_random_num():
+    list1 = [1, 2, 3, 4, 5, 6]
+    num = random.choice(list1)
+    return num
+
     
 def check(position):
     
