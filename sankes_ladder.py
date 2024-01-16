@@ -52,7 +52,8 @@ def check(position):
     
     elif (position==100):
         print("Congratulations, You Win!!!!!")
-        return
+        position = 0
+        return position
     
     else:
         return position
