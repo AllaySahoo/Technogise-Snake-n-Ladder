@@ -1,3 +1,5 @@
-class Piece:
-    
-    piece_position = 0
+class Player:
+    def __init__(self):
+        self.id = 0  
+        self.name = ""  
+        self.position = 0  
