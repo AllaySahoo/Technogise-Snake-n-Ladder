@@ -1,12 +1,14 @@
 from enum import Enum, auto
 
-class Position(Enum):
+class Board_Component_Type(Enum):
     Snake = auto()
     Ladder = auto()
     
 class Board_Component:
-    def __init__(self) :
-        self.start = 0
-        self.end = 0
-        self.type = Position()
-    
+    def __init__(self,id,start,end,type_num) :
+        
+        self.start = start
+        self.end = end
+        self.type = Board_Component_Type(type_num).name
+
+
